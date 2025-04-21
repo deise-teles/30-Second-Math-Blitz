@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Desafio Matemático</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>Desafio Matemático</h1>
+
+    <div class="difficulty-select">
+      <label for="difficulty">Dificuldade:</label>
+      <select id="difficulty">
+        <option value="easy">Fácil</option>
+        <option value="medium">Médio</option>
+        <option value="hard">Difícil</option>
+      </select>
+    </div>
+
+    <div id="timer">Tempo: 30</div>
+    <div id="score">Pontuação: 0</div>
+    <div id="question"></div>
+
+    <div class="answers">
+      <button class="answer" onclick="checkAnswer(0)">Resposta 1</button>
+      <button class="answer" onclick="checkAnswer(1)">Resposta 2</button>
+      <button class="answer" onclick="checkAnswer(2)">Resposta 3</button>
+      <button class="answer" onclick="checkAnswer(3)">Resposta 4</button>
+    </div>
+
+    <button id="startButton" onclick="startGame()">Iniciar Jogo</button>
+    <button id="restartButton" onclick="restartGame()">Reiniciar</button>
+
+    <div id="finalMessage" class="hidden"></div>
+    <div id="ranking"></div>
+  </div>
+
+  <audio id="sound-correct" src="sounds/acerto.mp3"></audio>
+  <audio id="sound-wrong" src="sounds/erro.mp3"></audio>
+  <audio id="sound-end" src="sounds/fim.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

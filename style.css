@@ -1,0 +1,96 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F8D794;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game-container {
+  background-color: #284139;
+  color: #F8D794;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 90%;
+  max-width: 700px;
+}
+
+h1 {
+  color: #B86830;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#timer, #score, #question {
+  font-size: 1.6em;
+  margin: 15px 0;
+}
+
+.answers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin: 20px 0;
+}
+
+button {
+  padding: 15px;
+  font-size: 1em;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.answer {
+  background-color: #111A19;
+  color: #F8D794;
+}
+
+.answer:hover {
+  background-color: #B86830;
+}
+
+#startButton, #restartButton {
+  background-color: #B86830;
+  color: #284139;
+  margin: 10px 5px;
+}
+
+#startButton:hover, #restartButton:hover {
+  background-color: #111A19;
+  color: #F8D794;
+}
+
+#finalMessage {
+  margin-top: 30px;
+  font-size: 1.8em;
+  color: #F8D794;
+}
+
+#ranking {
+  margin-top: 20px;
+  font-size: 1.2em;
+  background-color: #B86830;
+  color: #284139;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.difficulty-select {
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none;
+}
